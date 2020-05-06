@@ -6,12 +6,12 @@ source "${CONDA_SETTING_SCRIPT}"
 OPENVINO_DIR="C:\Program Files (x86)\IntelSWTools\openvino"
 
 # Create PyTorch environment
-conda create --name --yes pytorch python=3.6
+conda create --yes --name pytorch python=3.6
 conda activate pytorch
 pip install --yes -r pytorch_requirements.txt
 conda deactivate
 # Create OpenVINO environment
-conda create --name --yes openvino python=3.6
+conda create --yes --name openvino python=3.6
 conda activate openvino
 pip install --yes -r openvino_requirements.txt
 conda deactivate
